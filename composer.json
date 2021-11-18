@@ -1,5 +1,5 @@
 {
-    "name": "samoritano/linkedin-api-php-client",
+    "name": "waqasasif9292/linkedin-api-php-client",
     "description": "This package is an SDK for using LinkedIn V2 Marketing API. You can use it for managing Company Pages in this social network",
     "type": "library",
     "keywords": [
@@ -9,7 +9,7 @@
         "social", "rest", "api", "client", "social network", "auth", "authorization",
         "wrapper", "integration", "platform"
     ],
-    "homepage": "https://github.com/samoritano/linkedin-api-php-client",
+    "homepage": "https://github.com/waqasasif9292/linkedin-api-php-client",
     "require": {
         "php": ">=7.3",
         "ext-curl": "*",
@@ -43,9 +43,9 @@
 
     ],
     "support": {
-        "docs": "https://github.com/samoritano/linkedin-api-php-client/blob/master/README.md",
-        "source": "https://github.com/samoritano/linkedin-api-php-client",
-        "issues": "https://github.com/samoritano/linkedin-api-php-client/issues"
+        "docs": "https://github.com/waqasasif9292/linkedin-api-php-client/blob/master/README.md",
+        "source": "https://github.com/waqasasif9292/linkedin-api-php-client",
+        "issues": "https://github.com/waqasasif9292/linkedin-api-php-client/issues"
     },
     "autoload": {
         "psr-4": {"LinkedIn\\": "src/"}
