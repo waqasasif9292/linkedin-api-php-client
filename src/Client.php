@@ -287,14 +287,17 @@ class Client
                     'Connection' => 'Keep-Alive'
                 ]
             ]);
-            try {
-                $response = $guzzle->post($uri, ['form_params' => [
-                    'grant_type' => self::OAUTH2_GRANT_TYPE,
-                    self::OAUTH2_RESPONSE_TYPE => $code,
+            $uri .= "?" . http_build_query(
+                [
+                    'grant_type' => 'authorization_code',
+                    'code' => $code,
                     'redirect_uri' => $this->getRedirectUrl(),
                     'client_id' => $this->getClientId(),
                     'client_secret' => $this->getClientSecret(),
-                ]]);
+                ]
+            );
+            try {
+                $response = $guzzle->post($uri, []);
             } catch (RequestException $exception) {
                 throw Exception::fromRequestException($exception);
             }
